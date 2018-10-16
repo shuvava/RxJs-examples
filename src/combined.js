@@ -1,3 +1,8 @@
+/**
+ * definition of Observable
+ * https://rxjs-dev.firebaseapp.com/guide/observable
+ */
+
 /* eslint no-console: "off" */
 import { Observable } from 'rxjs/Observable';
 // NORMAL

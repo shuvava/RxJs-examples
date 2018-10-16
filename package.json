@@ -6,6 +6,7 @@
   "scripts": {
     "run": "node ./dist/index.js",
     "build": "npx babel src -d dist --source-maps",
+    "watch": "npx gulp --color",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,16 +23,22 @@
   },
   "homepage": "https://github.com/shuvava/RxJs-examples#readme",
   "dependencies": {
-    "babel": "^6.23.0",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "7.1.0",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.3.3"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-2": "^6.24.1",
+    "@babel/cli": "7.1.2",
     "eslint": "^5.7.0",
+    "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-config-airbnb-base": "13.1.0"
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-logger": "0.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^5.0.1"
   }
 }

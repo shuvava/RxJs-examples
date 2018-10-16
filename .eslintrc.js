@@ -36,6 +36,8 @@ module.exports = {
 
         // vetted on by the team (30 Aug 2016)
         "no-continue": "off",
+// just because this project with nodejs examples
+        "no-console": "off",
     },
     "env": {
         'browser': true,
