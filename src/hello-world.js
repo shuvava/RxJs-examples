@@ -2,6 +2,7 @@
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/from';
 import 'rxjs/add/operator/map';
+
 const myArray = [1, 2, 3];
 // NORMAL
 console.log('Normal');
