@@ -43,4 +43,3 @@ setTimeout(() => {
     t = undefined;
     console.log('!!!!! Object TestMemoryLeakType1 was destroyed !!!!');
 }, 3000);
-
