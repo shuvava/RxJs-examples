@@ -25,6 +25,7 @@
   "dependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "7.1.0",
+    "babel-polyfill": "^6.26.0",
     "rxjs": "^6.3.3",
     "rxjs-compat": "^6.3.3"
   },
