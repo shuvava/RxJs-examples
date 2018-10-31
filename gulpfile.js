@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
 const watch = require('gulp-watch');
-const gutil = require('gulp-util');
+const through2 = require('through2');
 const logger = require('gulp-logger');
 var sourcemaps = require('gulp-sourcemaps');
 
@@ -11,7 +11,7 @@ function iif(test, fn) {
     if (test) {
         return fn.apply(null, Array.prototype.slice.call(arguments,2)); // eslint-disable-line
     }
-    return gutil.noop();
+    return through2(function (chunk, enc, cb) { cb(null, chunk) });
 }
 
 gulp.task('default', () => {
