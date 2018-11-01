@@ -9,6 +9,10 @@
  *
  * switchMap is used,
  * pending backend requests are aborted in favour of more recently dispatched actions
+use concatMap with actions that should be neither aborted nor ignored and for which the ordering must be preserved — it’s also a conservative choice that will always behave in a predictable manner;
+use mergeMap with actions that should be neither aborted nor ignored and for which the ordering is unimportant;
+use switchMap with read actions that should be aborted when another action of the same type is dispatched; and
+use exhaustMap with actions that should be ignored whilst an action of the same type is pending.
  */
 import { EventEmitter } from 'events';// core nodejs functionality
 import { interval, fromEvent } from 'rxjs';
