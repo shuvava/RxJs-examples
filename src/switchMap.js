@@ -6,6 +6,9 @@
  * When a new inner Observable is emitted, switchMap stops emitting items
  * from the earlier-emitted inner Observable and begins emitting items from the new one.
  * It continues to behave like this for subsequent inner Observables.
+ *
+ * switchMap is used,
+ * pending backend requests are aborted in favour of more recently dispatched actions
  */
 import { EventEmitter } from 'events';// core nodejs functionality
 import { interval, fromEvent } from 'rxjs';
