@@ -1,5 +1,5 @@
 import { fromEvent } from 'rxjs';
-import 'rxjs/add/operator/scan';
+import { scan } from 'rxjs/operators';
 import { EventEmitter } from 'events';// core nodejs functionality
 
 
@@ -21,6 +21,8 @@ myEmitter.on('event', function eventHandler(a, b) {
 fromEvent(myEmitter, 'event')
     .subscribe(() => console.log('Clicked!'));
 fromEvent(myEmitter, 'event')
-    .scan(count => count + 1, 0)
+    .pipe(
+        scan(count => count + 1, 0),
+    )
     .subscribe(count => console.log(`Clicked ${count} times`));
 myEmitter.emit('event', 'a', 'b');

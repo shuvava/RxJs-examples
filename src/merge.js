@@ -1,4 +1,4 @@
-import 'babel-polyfill';
+import '@babel/polyfill';
 import { interval, merge } from 'rxjs';
 
 // emit value in sequence every 1 second
