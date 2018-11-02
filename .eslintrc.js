@@ -17,7 +17,7 @@ module.exports = {
         "indent": [2, 4, { "SwitchCase": 1, "VariableDeclarator": 1 }],
 
         // increase maximum length of line
-        "max-len": [2, 150, { "ignoreUrls": true, "ignoreComments": false }],
+        "max-len": [2, 170, { "ignoreUrls": true, "ignoreComments": true }],
 
         "no-param-reassign": "off",
 
